@@ -22,7 +22,7 @@
 
 ; Win + T: Insert current datetime in the specified format.
 #t:: {
-    CurrentDateTime := FormatTime(, "[M/dd/yyyy, tt, hh:mm]")
+    CurrentDateTime := FormatTime(, "[dd/mm/yyyy, dddd, hh:mm tt]")
     SendInput CurrentDateTime
 }
 
