@@ -19,6 +19,13 @@
 #w:: {
     WinMaximize "A"
 }
+
+; Win + T: Insert current datetime in the specified format.
+#t:: {
+    CurrentDateTime := FormatTime(, "[M/dd/yyyy, tt, hh:mm]")
+    SendInput CurrentDateTime
+}
+
 ; Win + 1: Switch to the previous workspace
 ; This sends the Ctrl + Win + Left Arrow command.
 #1:: {
